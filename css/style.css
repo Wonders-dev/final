@@ -1,0 +1,44 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h1{
+     font-family: 'Courier New', Courier, monospace;
+     text-decoration-line: underline;
+     text-decoration-color:  rgb(255, 237, 237);
+     text-align: center;
+}
+
+img{
+   border: solid,  rgb(255, 237, 237), 15px;
+}
+
+.mebuttons button:nth-child(1){
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 243, 243);
+    border: 4px, dashed,  rgba(214, 213, 213, 0.61);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mebuttons button:nth-child(1):hover {
+  box-shadow: 0 8px 25px rgba(241, 113, 113, 0.4);
+}
+
+.mebuttons button:nth-child(2){
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+    border: 4px, dashed, rgba(214, 213, 213, 0.61);
+    color: black;
+    background-color: rgb(255, 243, 243);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.mebuttons button:nth-child(2):hover {
+  box-shadow: 0 8px 25px rgba(241, 113, 113, 0.4);
+}

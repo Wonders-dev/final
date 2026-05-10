@@ -1,0 +1,71 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h1{
+     font-family: 'Courier New', Courier, monospace;
+     text-decoration-line: underline;
+     text-decoration-color:  rgb(255, 237, 237);
+     text-align: center;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+     text-decoration-line: underline;
+     text-decoration-color:  rgb(255, 237, 237);
+     text-align: center;
+}  
+
+
+.image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+img {
+    border: 15px solid rgb(255, 237, 237);
+    box-sizing: border-box;
+}
+
+button{
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+    border: 4px, dashed, rgba(214, 213, 213, 0.61);
+    color: black;
+    background-color: rgb(255, 243, 243);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ button:hover {
+  box-shadow: 0 8px 25px rgba(241, 113, 113, 0.4);
+}
+
+.note{
+    font-style: italic;
+}
+
+input{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;  
+    border: 6px, solid, rgb(255, 237, 237);
+}
+
+ul{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;  
+    border: 6px, solid, rgb(255, 237, 237); 
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/*This is the flexbox portion. I thought I wouldn't use it, but then I realized
+that I wasnted a "go back home" button in the upper left part. Then BOOM, a reason to use flexbox.
+So, strech #2 fulfilled!*/
+.container{
+    display:flex;
+    justify-content: flex-start;
+}
