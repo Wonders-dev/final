@@ -2,6 +2,7 @@
 const lilybtn = document.querySelector('#btn-lily');
 const rosebtn = document.querySelector('#btn-rose');
 const miscbtn = document.querySelector('#btn-special');
+const homebtn = document.querySelector('#backhome');
 
 //the h1, img, blah blah blah
 const bodyPg = document.querySelector('body');
@@ -47,7 +48,13 @@ function showspecial(){
     price.textContent = "Price: 50$"
 }
 
+//Clicking the home button at the top left = back to the home page. 
+function homepage(){
+window.location.href = "index.html";
+}
+
 //Event listeners
+homebtn.addEventListener('click', homepage);
 lilybtn.addEventListener('click', showlilyofvalley);
 rosebtn.addEventListener('click', showrose);
 miscbtn.addEventListener('click', showspecial);
