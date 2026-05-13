@@ -10,8 +10,45 @@ h1{
      text-align: center;
 }
 
+h2{
+    font-family: 'Courier New', Courier, monospace;
+     text-decoration-line: underline;
+     text-decoration-color:  rgb(255, 237, 237);
+     text-align: center;
+}  
+
+.image {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.imj {
+    border: 15px solid rgb(255, 237, 237);
+    box-sizing: border-box;
+}
+
+.imjtwo {
+    border: 15px solid rgb(255, 237, 237);
+    box-sizing: border-box;
+}
+
+.price{
+    border: 6px double rgb(255, 237, 237);
+    box-sizing: border-box; 
+}
+
+
 img{
    border: solid,  rgb(255, 237, 237), 15px;
+}
+
+.mebuttons{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .mebuttons button:nth-child(1){
@@ -22,6 +59,46 @@ img{
     border: 4px, dashed,  rgba(214, 213, 213, 0.61);
     color: black;
     font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+    border: 4px, dashed, rgba(214, 213, 213, 0.61);
+    color: black;
+    background-color: rgb(255, 243, 243);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ button:hover {
+  box-shadow: 0 8px 25px rgba(241, 113, 113, 0.4);
+}
+
+.note{
+    font-style: italic;
+}
+
+input{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;  
+    border: 6px, solid, rgb(255, 237, 237);
+}
+
+ul{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;  
+    border: 6px, solid, rgb(255, 237, 237); 
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/*This is the flexbox portion. I thought I wouldn't use it, but then I realized
+that I wasnted a "go back home" button in the upper left part. Then BOOM, a reason to use flexbox.
+So, strech #2 fulfilled! I changed the rest of the grid-work to flex as well*/
+.container{
+    display:flex;
+    justify-content: flex-start;
 }
 
 .mebuttons button:nth-child(1):hover {
@@ -40,5 +117,20 @@ img{
 
 
 .mebuttons button:nth-child(2):hover {
+  box-shadow: 0 8px 25px rgba(241, 113, 113, 0.4);
+}
+
+.mebuttons button:nth-child(3){
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+    border: 4px, dashed, rgba(214, 213, 213, 0.61);
+    color: black;
+    background-color: rgb(255, 243, 243);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.mebuttons button:nth-child(3):hover {
   box-shadow: 0 8px 25px rgba(241, 113, 113, 0.4);
 }
